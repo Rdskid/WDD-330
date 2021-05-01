@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2</title>
+
+</head>
+<body>
+<h1>Logic and Functions</h1>
+    <button onclick="week()">Press Me!</button>
+    <div id="days"></div>
+    <br/>
+    <p>This is an example of a For loop using it to name off the days of the week </p>
+</body>
+    <script>
+        
+        function week() {
+            let daysofWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            let text = "";
+            for (i = 0; i < daysofWeek.length; i++) {
+                text += "Array item " + i + " is equal to Day " + (i+1) + " which is " + "<b>" + daysofWeek[i] + "</b>" + "<br>";
+            }
+            document.getElementById("days").innerHTML = text;
+        }
+    </script>
+</html>
