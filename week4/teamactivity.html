@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Activity</title>
+<style>
+  .board {
+    width: 320px;
+    height: 320px;
+  }
+  .board td,
+  .board tr {
+    width: 33.3%;
+    height: 33.3%;
+  }
+  .board td {
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    font-size: 5em;
+    text-align: center;
+  }
+
+  .board td:last-child {
+    border-right: 0;
+  }
+
+  .board tr:last-child td {
+    border-bottom: 0;
+  }
+
+
+
+  .divBoard {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+  }
+  .divBoard > div {
+     border-right: 1px solid;
+    border-bottom: 1px solid; 
+    border: 1px solid;
+    font-size: 5em;
+    text-align: center;
+  }
+   .divBoard > div:nth-child(3n) {
+    border-right: 0;
+  }
+  .divBoard > div:nth-child(n + 7) {
+    border-bottom: 0;
+  } 
+</style>
+</head>
+<body>
+  <table class="board">
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</body>
+</html>
