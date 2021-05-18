@@ -1,5 +1,5 @@
-import {hikes} from './hikes.js';
-const myHike = new Hikes('hikeListId');
+import {Hikes} from './hikes.js';
+const myHikes = new Hikes('hikeListId');
 window.addEventListener("load", () => {
-
+    myHikes.showHikeList();
 });
