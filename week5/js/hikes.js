@@ -67,6 +67,6 @@ for (let i = 0; i < hikeList.length; i++ ) {
   document.querySelector('div.hikes').appendChild(hikeCard);
   }
 }
-module.export = {
+export default {
   createHTML
 };
