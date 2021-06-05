@@ -1,21 +1,21 @@
-class MultiplicatorUnitFailure extends Error {}
-
-function primitiveMultiply(a, b) {
-  if (Math.random() < 0.2) {
-    return a * b;
+const dice = {
+  sides: 6,
+  roll() {
+    return Math.floor(this.sides * Math.random()) + 1;
+  },
+};
+console.log("Before the roll");
+const roll = new Promise((resolve, reject) => {
+  const n = dice.roll();
+  if (n > 1) {
+    setTimeout(() => {
+      resolve(n);
+    }, n * 200);
   } else {
-    throw new MultiplicatorUnitFailure("Klunk");
+    setTimeout(() => reject(n), n * 200);
   }
-}
-
-function reliableMultiply(a, b) {
-  for (;;) {
-    try {
-      return primitiveMultiply(a, b);
-    } catch (e) {
-      if (!(e instanceof MultiplicatorUnitFailure)) throw e;
-    }
-  }
-}
-
-console.log(reliableMultiply(8, 8));
+});
+roll
+  .then((result) => console.log(`I rolled a ${result}`))
+  .catch((result) => console.log(`Drat! ... I rolled a ${result}`));
+console.log("After the roll");
