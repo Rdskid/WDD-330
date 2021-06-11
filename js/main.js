@@ -33,6 +33,11 @@ const links = [
     label: "Week7 Notes",
     url: "week7/",
   },
+
+  {
+    label: "Week8 Notes",
+    url: "week8/",
+  },
 ];
 
 let weeklist = document.getElementById("weeklist");
