@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 10</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+      body {
+        background-color: darkslategray;
+      }
+      main {
+        font-family: "Shadows Into Light", cursive;
+        width: 600px;
+        background-color: white;
+        margin: auto;
+        transform: translate(0, 10%);
+      }
+      h1 {
+        text-align: center;
+      }
+      ul {
+        margin-left: 10px;
+      }
+      li {
+        background-color: #ffdddd;
+        border-left: 6px solid #f44336;
+        margin-top: 10px;
+        list-style: none;
+        margin-left: -50px;
+        padding: 1px;
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Notes</h1>
+      <ul>
+        <li>
+          The Fetch API provides a JavaScript interface for accessing and
+          manipulating parts of the HTTP pipeline, such as requests and
+          responses.
+        </li>
+        <li>
+          The fetch() method can optionally accept a second parameter, an init
+          object that allows you to control a number of different settings
+        </li>
+
+        <li>
+          A fetch() promise will reject with a TypeError when a network error is
+          encountered or CORS is misconfigured on the server-side, although this
+          usually means permission issues or similar
+        </li>
+        <li>
+          Before submitting data to the server, it is important to ensure all
+          required form controls are filled out, in the correct format. This is
+          called client-side form validation, and helps ensure data submitted
+          matches the requirements set forth in the various form controls.
+        </li>
+        <li>
+          When you enter data, the browser and/or the web server will check to
+          see that the data is in the correct format and within the constraints
+          set by the application. Validation done in the browser is called
+          client-side validation, while validation done on the server is called
+          server-side validation. In this chapter we are focusing on client-side
+          validation.
+        </li>
+        <li>
+          <b>!</b><b>!</b><b>!</b>You must use JavaScript if you want to take
+          control over the look and feel of native error messages or to deal
+          with legacy browsers that do not support HTML's built-in form
+          validation. In this section we will look at the different ways to do
+          this.
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
