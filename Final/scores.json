@@ -1,0 +1,25 @@
+{
+  "hikes": [
+    {
+      "place": "1",
+      "name": "Chris Hemsworth",
+      "occupation": "Captain America",
+      "time": "0 mins, 8 secs",
+      "secret": "Serum"
+    },
+    {
+      "place": "2",
+      "name": "Chris Evans",
+      "occupation": "Thor",
+      "time": "0 mins, 8.5 secs",
+      "secret": "Odinson"
+    },
+    {
+      "place": "3",
+      "name": "Chris Pratt",
+      "occupation": "Star Lord",
+      "time": "0 mins, 10 secs",
+      "secret": "Half Celestial"
+    }
+  ]
+}
