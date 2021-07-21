@@ -2,14 +2,14 @@
   "hikes": [
     {
       "place": "1",
-      "name": "Chris Hemsworth",
+      "name": "Chris Evans",
       "occupation": "Captain America",
       "time": "0 mins, 8 secs",
       "secret": "Serum"
     },
     {
       "place": "2",
-      "name": "Chris Evans",
+      "name": "Chris Hemsworth",
       "occupation": "Thor",
       "time": "0 mins, 8.5 secs",
       "secret": "Odinson"
@@ -20,6 +20,20 @@
       "occupation": "Star Lord",
       "time": "0 mins, 10 secs",
       "secret": "Half Celestial"
+    },
+    {
+      "place": "4",
+      "name": "Robert Downey Jr.",
+      "occupation": "Iron Man",
+      "time": "0 mins, 11 secs",
+      "secret": "Rich"
+    },
+    {
+      "place": "5",
+      "name": "Jeremy Renner",
+      "occupation": "HAwk Eye",
+      "time": "0mins, 11.25 secs",
+      "secret": "Accurate"
     }
   ]
 }
