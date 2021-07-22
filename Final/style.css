@@ -39,7 +39,7 @@ h1 {
 
 .deck {
   width: 85%;
-  background: #716f71;
+  background: #243010;
   padding: 1rem;
   border-radius: 4px;
   box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
@@ -54,7 +54,7 @@ h1 {
   height: 3.7rem;
   width: 3.7rem;
   margin: 0.2rem 0.2rem;
-  background: #141214;
+  background: #a1c349;
   font-size: 0;
   color: #ffffff;
   border-radius: 5px;
@@ -81,7 +81,7 @@ h1 {
 
 .deck .card.match {
   cursor: default;
-  background: #e5f720;
+  background: gray;
   font-size: 33px;
   animation-name: rubberBand;
   -webkit-backface-visibility: visible !important;
@@ -126,6 +126,7 @@ h1 {
 .score-panel .restart {
   float: right;
   cursor: pointer;
+  margin-top: -20px;
 }
 
 .fa-star {
@@ -343,7 +344,7 @@ h1 {
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 1% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
@@ -361,4 +362,44 @@ h1 {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.scores {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  background-color: #a1c349;
+  padding: 10px;
+  margin: 0 auto;
+  box-shadow: 0 0 30px 0;
+  text-align: center;
+  display: flex;
+}
+
+.scores section {
+  font-size: 20px;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  border: solid 2px #a1c349;
+  padding: 10px;
+  justify-content: center;
+}
+
+#myBtn {
+  margin-top: -50px;
+  background-color: #87a330;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#myBtn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }

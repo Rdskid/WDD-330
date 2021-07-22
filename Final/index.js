@@ -20,10 +20,10 @@ let modal = document.getElementById("popup1");
 
 let restart = document.getElementById(".fa fa-repeat");
 
-if (restart) {
-  console.log("it works");
-  restart.addEventListener("click", startGame());
-}
+// if (restart) {
+//   console.log("it works");
+//   restart.addEventListener("click", startGame());
+// }
 
 var openedCards = [];
 
@@ -187,10 +187,10 @@ function closeModal() {
   });
 }
 
-function playAgain() {
-  modal.classList.remove("show");
-  startGame();
-}
+// function playAgain() {
+//   modal.classList.remove("show");
+//   startGame();
+// }
 
 //listeners
 for (var i = 0; i < cards.length; i++) {
