@@ -48,6 +48,14 @@ const links = [
     label: "Week10 Notes",
     url: "week10/",
   },
+  {
+    label: "Week11 Notes",
+    url: "week11/",
+  },
+  {
+    label: "Final",
+    url: "Final/",
+  },
 ];
 
 let weeklist = document.getElementById("weeklist");
