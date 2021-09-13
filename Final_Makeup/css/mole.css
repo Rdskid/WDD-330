@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background: #ffc600;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Amatic SC", cursive;
+}
+
+h1 {
+  text-align: center;
+  font-size: 10rem;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.score {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0 3rem;
+  line-height: 1;
+  border-radius: 1rem;
+}
+
+.game {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hole:after {
+  display: block;
+  background: url(../img/dirt.svg) bottom center no-repeat;
+  background-size: contain;
+  content: "";
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  z-index: 1;
+  bottom: -30px;
+}
+
+.mole {
+  background: url("../img/mole.svg") bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.hole.up .mole {
+  top: 0;
+}
+
+#pop {
+  width: 320px;
+  height: 120px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px 30px 70px;
+  z-index: 2;
+}
+
+#message {
+  position: inherit;
+  margin-top: -70px;
+  margin-right: 20px;
+  font-size: 4.5rem;
+}
+button.close {
+  width: 30px;
+  font-size: 20px;
+  color: #c0c5cb;
+  justify-content: end;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10px;
+  margin-left: 100%;
+}
+button.close:hover {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
